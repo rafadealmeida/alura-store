@@ -47,6 +47,31 @@
         width:100%;
     }
 
+    .carrosel{
+        
+        width:100vw;
+        height:500px;
+        overflow:hidden;
+        position:relative;
+        top:-131%;
+        margin: 0px auto;
+    }
+
+    .carrosel .fotos{
+        width:500%;
+        animation-name: animacao;
+        animation-duration:20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+
+        position:absolute;
+    }
+
+    .carrosel .fotos img{
+        width:19.9%;
+        background-size: cover;
+    }
+
 }
 
 @media screen and (min-width: 768px){
@@ -98,6 +123,10 @@
         margin-right:0;
         width:49%;
     }
+
+    .carrosel{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -109,5 +138,8 @@
     .populares__card:last-child{
         margin-right:0;
         width:20%;
+    }
+    .carrosel{
+        display: none;
     }
 }
